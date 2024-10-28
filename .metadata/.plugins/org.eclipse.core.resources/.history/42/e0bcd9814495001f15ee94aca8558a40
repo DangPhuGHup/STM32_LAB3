@@ -1,0 +1,12 @@
+/*
+ * traffic_light.c
+ *
+ *  Created on: Oct 28, 2024
+ *      Author: Admin
+ */
+#include "traffic_light.h"
+
+void light(enum led color)
+{
+
+}
