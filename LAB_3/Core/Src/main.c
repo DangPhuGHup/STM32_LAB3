@@ -94,13 +94,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  status = INIT;
+  //status = INIT;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	fsm_automatic_Run();
+	//fsm_automatic_Run();
+	HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, GPIO_PIN_SET);
+	display_1(time_red);
+	if(button_flag[0] == 1)
+	{
+		button_flag[0] = 0;
+		time_red ++;
+	}
   }
 }
   /* USER CODE END 3 */
