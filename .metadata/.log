@@ -98,3 +98,41 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\LAB VXL\GIT_LAB3\LA
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-29 08:26:15.537
 !MESSAGE Indexed 'LAB_3' (27 sources, 88 headers) in 3.1 sec: 4,913 declarations; 30,942 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0056%)
+!SESSION 2024-10-29 14:16:54.753 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\LAB VXL\GIT_LAB3\LAB_3\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\LAB VXL\GIT_LAB3\LAB_3\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-29 14:17:02.477
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-29 14:17:02.477
+!MESSAGE Log4j2 initialized with config file D:\LAB VXL\GIT_LAB3\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-29 14:17:10.244
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-29 14:17:13.284
+!MESSAGE Indexed 'LAB_3' (27 sources, 88 headers) in 2.86 sec: 4,921 declarations; 31,013 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0056%)
+!SESSION 2024-10-29 20:23:33.843 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\LAB VXL\GIT_LAB3\LAB_3\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\LAB VXL\GIT_LAB3\LAB_3\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-29 20:23:54.604
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-29 20:23:54.611
+!MESSAGE Log4j2 initialized with config file D:\LAB VXL\GIT_LAB3\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-29 20:24:05.463
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-29 20:24:08.825
+!MESSAGE Indexed 'LAB_3' (27 sources, 88 headers) in 3.21 sec: 4,919 declarations; 31,074 references; 0 unresolved inclusions; 1 syntax errors; 32 unresolved names (0.089%)

@@ -1,2 +1,2 @@
 ../Core/Src/traffic_light.c:9:6:light_1	16	static
-../Core/Src/traffic_light.c:31:6:light_2	16	static
+../Core/Src/traffic_light.c:36:6:light_2	16	static

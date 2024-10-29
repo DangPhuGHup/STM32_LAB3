@@ -10,7 +10,7 @@
 
 #include "main.h"
 
-enum led {red, green, yellow};
+enum led {red, green, yellow, black};
 
 void light_1(enum led color);
 void light_2(enum led color);

@@ -5,7 +5,9 @@
  *      Author: Admin
  */
 #include "button.h"
-
+//int button1_flag = 0;
+//int button2_flag = 0;
+//int button3_flag = 0;
 int keyReg0[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int keyReg1[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int keyReg2[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};

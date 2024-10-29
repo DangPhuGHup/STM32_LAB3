@@ -12,9 +12,10 @@
 #define NORMAL_STATE GPIO_PIN_SET  // Khi khong nhan, chan nay o muc cao.
 #define PRESSED_STATE GPIO_PIN_RESET
 #define NUMBER_of_BUTTONS 3
-extern int button1_flag;
-extern int button2_flag;
-extern int button3_flag;
+//extern int button1_flag;
+//extern int button2_flag;
+//extern int button3_flag;
+extern int button_flag[NUMBER_of_BUTTONS];
 void getKeyInput();
 void subkey();
 
