@@ -1,0 +1,28 @@
+/*
+ * button.c
+ *
+ *  Created on: Oct 28, 2024
+ *      Author: Admin
+ */
+#include "button.h"
+
+int keyReg0[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int keyReg1[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int keyReg2[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int keyRegPrevious[NUMBER_of_BUTTONS] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int timer_keypress[NUMBER_of_BUTTONS] = {0 , 0, 0};
+int button_flag[NUMBER_of_BUTTONS] = {0, 0, 0};
+
+void subkey(int button_index){
+	button_flag[button_index] = 1;
+}
+
+void getKeyInput(){
+	for(int i = 0; i < NUMBER_of_BUTTONS; i++){
+		keyReg0[i] = keyReg1[i];
+		keyReg1[i] = keyReg2[i];
+	}
+	keyReg2[0] = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+	keyReg2[1] = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+	keyReg2[2] = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin);
+}

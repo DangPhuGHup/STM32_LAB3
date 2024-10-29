@@ -35,7 +35,7 @@ void getKeyInput(){
 				if(keyReg2[i] == PRESSED_STATE) // cho biết là trong trường hợp đã nhấn
 				{
 					subkey(i);              // thực hiện hàm tùy ý.
-					timer_keypress[i] = 200;  // nhấn đề 2s mới chuyển sang trạng thái nhấn đè ở dưới.
+					timer_keypress[i] = 2000;  // nhấn đề 2s mới chuyển sang trạng thái nhấn đè ở dưới.
 										   // thời gian để chuyển trạng thái sang nhấn đè.
 				}
 			}
@@ -45,7 +45,7 @@ void getKeyInput(){
 					if(timer_keypress[i] <= 0)     // da den luc thuc hien nhan de
 					{
 						subkey(i);
-						timer_keypress[i] = 50;   // thoi gian giua cac lenh thuc thi khi nhan de
+						timer_keypress[i] = 500;   // thoi gian giua cac lenh thuc thi khi nhan de
 					}
 				}
 				else{
