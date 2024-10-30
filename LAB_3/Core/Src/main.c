@@ -94,23 +94,24 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //status = INIT;
+  status = INIT;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	//fsm_automatic_Run();
-	HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, GPIO_PIN_SET);
-	display_1(time_red);
-	if(button_flag[0] == 1)
-	{
-		button_flag[0] = 0;
-		time_red ++;
-	}
+	fsm_automatic_Run();
+//	HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, GPIO_PIN_SET);
+//	display_1(time_red);
+//	if(button_flag[0] == 1)
+//	{
+//		button_flag[0] = 0;
+//		time_red ++;
+//	}
   }
 }
   /* USER CODE END 3 */
+
 
 /**
   * @brief System Clock Configuration
@@ -211,7 +212,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LED_TEST_Pin|GREEN_1_Pin|YELLOW_1_Pin|RED_1_Pin
                           |GREEN_2_Pin|YELLOW_2_Pin|RED_2_Pin|EN1_Pin
-                          |EN2_Pin|EN3_Pin|EN3A11_Pin, GPIO_PIN_RESET);
+                          |EN2_Pin|EN3_Pin|EN4_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG0_Pin|SEG11_Pin|SEG12_Pin|SEG13_Pin
@@ -221,10 +222,10 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : LED_TEST_Pin GREEN_1_Pin YELLOW_1_Pin RED_1_Pin
                            GREEN_2_Pin YELLOW_2_Pin RED_2_Pin EN1_Pin
-                           EN2_Pin EN3_Pin EN3A11_Pin */
+                           EN2_Pin EN3_Pin EN4_Pin */
   GPIO_InitStruct.Pin = LED_TEST_Pin|GREEN_1_Pin|YELLOW_1_Pin|RED_1_Pin
                           |GREEN_2_Pin|YELLOW_2_Pin|RED_2_Pin|EN1_Pin
-                          |EN2_Pin|EN3_Pin|EN3A11_Pin;
+                          |EN2_Pin|EN3_Pin|EN4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -257,7 +258,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   timerRun();
-  getKeyInput();
+  //getKeyInput();
 }
 /* USER CODE END 4 */
 

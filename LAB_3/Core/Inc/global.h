@@ -22,6 +22,8 @@
 #define SETTING_GREEN     22
 #define SETTING_YELLOW    23
 
+#define freq1_led7        35
+#define freq2_led7        20
 #include "software_timer.h"
 #include "button.h"
 #include "led7_segment.h"
@@ -34,4 +36,6 @@ extern int time_red;
 extern int time_green;
 extern int time_yellow;
 
+extern int led_auto_buffer[3];
+void display7seg();
 #endif /* INC_GLOBAL_H_ */

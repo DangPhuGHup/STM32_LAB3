@@ -1,3 +1,6 @@
-../Core/Src/software_timer.c:15:6:setTimer	16	static
-../Core/Src/software_timer.c:20:6:setTimer_led7	16	static
-../Core/Src/software_timer.c:25:6:timerRun	4	static
+../Core/Src/software_timer.c:24:6:setTimer	16	static
+../Core/Src/software_timer.c:29:6:setTimer_EN_GR1	16	static
+../Core/Src/software_timer.c:34:6:setTimer_EN_GR2	16	static
+../Core/Src/software_timer.c:39:6:setTimer_1s1	16	static
+../Core/Src/software_timer.c:44:6:setTimer_1s2	16	static
+../Core/Src/software_timer.c:49:6:timerRun	4	static
