@@ -22,8 +22,8 @@
 #define SETTING_GREEN     22
 #define SETTING_YELLOW    23
 
-#define freq1_led7        35
-#define freq2_led7        20
+#define freq1_led7        10
+#define freq2_led7        10
 #include "software_timer.h"
 #include "button.h"
 #include "led7_segment.h"
